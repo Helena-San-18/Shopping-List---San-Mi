@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0e8cc921e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/img/logo-list.png" alt="Health List Logo">
+            <div>
+                <i class="fa-solid fa-caret-left" style="color: #0176d0;"></i>
+                <a class="inter-medium" href="javascript:void(0)" onClick="history.go(-1); return false;">Back</a>
+                <h2 class="inter-bold">Shopping of the Week</h2>
+            </div>
+        </header>
+        <main>
+            <form>
+                <input class="inter-medium" type="text" id="input-item" placeholder="Add a new item" />
+                <button class="inter-medium" id="submit" autofocus>Add Item</button>
+            </form>
+            <div class="inter-medium" id="shopping-list"></div>
+            <footer>
+                <div class="alertBox" id="alertBox">
+                    <span class= "iter-medium" id="mess-alert"><i class="fa-solid fa-circle-exclamation" style="color: #ffffff;"></i> The
+                        item has been removed from the list </span>                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

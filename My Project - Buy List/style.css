@@ -1,0 +1,172 @@
+body {
+  background-color: #F4F5FB;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  width: 350px;
+  margin: 50px auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 420px;
+}
+
+.inter-bold {
+  font-weight: 700;
+}
+
+.inter-semibold {
+  font-weight: 600;
+}
+
+.inter-medium {
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+header>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input.inter-medium {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+input {
+  width: 380px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D1D5DB;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #CA3884;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border-color: #CA3884;
+  padding: 10px;
+  width: 100px;
+  outline: none;
+}
+
+.list-item {
+  color: #374151;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  max-width: 493px;
+  /* Ajuste conforme necessário */
+  width: 100%;
+  /* Centraliza a div */
+  margin: 0 auto;
+  /* Centraliza a div */
+}
+
+.list-item input[type="checkbox"] {
+  margin-right: 1px;
+  /* Adiciona espaço entre o checkbox e o texto */
+}
+
+.list-item span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.list-item .delete-icon {
+  cursor: pointer;
+  color: #888888;
+  margin-left: auto;
+  /* Alinha o ícone "x" à direita */
+}
+
+.list-item .delete-icon:hover {
+  color: #ff0000;
+}
+
+span {
+  display: inline-flex;
+  align-items: center;
+}
+
+i.fa-circle-exclamation {
+  margin-right: 5px;
+}
+
+i.fa-xmark {
+  margin-left: 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#alertBox {
+  display: none;
+  background-color: #C93847;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #C93847;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 493px;
+  margin: 0 auto;
+  /* Centraliza a caixa */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#alertBox .icon {
+  margin-right: 10px;
+}
+
+#alertBox .message {
+  flex-grow: 1;
+}
+
+  #closeAlertButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
